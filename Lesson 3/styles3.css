@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@700&family=Merriweather+Sans:ital,wght@1,700&display=swap');
+body {
+    background-color: #A0522D;
+    text-align: center;
+}
+#content {
+    background-color: white;
+    padding: 30px;
+    width: 70%;
+    margin: 0 auto;
+}
+h1, h2 {
+    padding: 10px;
+}
+ol, ul {
+    text-align: left;
+}
+p {
+    line-height: 1.5em;
+}
+p, .jura {
+    font-family: Alegreya, Arial, Helvetica, sans-serif;
+}
+p, ol {
+    margin-left: 6em;
+    margin-right: 6em;
+}
+.logo {
+    width: 200px;
+}
+nav ul {
+    margin: 5px;
+    padding: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    background-color: #A0522D;
+    margin: 0 auto;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    padding: 15px;
+}
+nav a:hover {
+    background-color: rgb(95, 81, 81);
+}
+.persona {
+    width: 250px;
+}
+.pri {
+    background-color: #A0522D;
+}
+.sec {
+    background-color: #FFFACD;
+}
+.acc1 {
+   background-color: #708090;
+}
+.acc2 {
+    background-color: #BC8F8F;
+}
+footer {
+    padding-top: 30px;
+}
+@media screen and (max-width: 1000px) { 
+    nav a {
+        font-size: 1.1em;
+    }
+}
+@media screen and (max-width: 750px) { 
+    nav ul {
+        display: block;
+    }
+    nav li {
+        padding: 10px;
+        text-align: center;
+    }
+    nav a {
+        font-size: 1.3em;
+    }
+    p, ol {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+}
