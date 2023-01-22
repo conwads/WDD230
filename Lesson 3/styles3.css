@@ -11,6 +11,13 @@ body {
 }
 h1, h2 {
     padding: 10px;
+    font-family: Merriweather Sans;
+}
+h3 {
+    font-family: Merriweather Sans;
+}
+.Alegreya h3 {
+    font-family: Alegreya;
 }
 ol, ul {
     text-align: left;
@@ -18,7 +25,7 @@ ol, ul {
 p {
     line-height: 1.5em;
 }
-p, .jura {
+p, .Alegreya {
     font-family: Alegreya, Arial, Helvetica, sans-serif;
 }
 p, ol {
