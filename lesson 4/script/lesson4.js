@@ -1,12 +1,16 @@
+// FOR GET YEAR
+function getyear() {
+    let myDate = new Date();
+
+    document.getElementById('currentyear').textContent = myDate.getFullYear();
+    document.getElementById('lastmodified').textContent = document.lastModified;
+}
 
 
-
-
-
-
-
-GamepadButton.addEventListener('click', show);
-
-//Hamburger Button JS
-
-const mainnav = document.querySelector('3')
+// FOR MENU TOGGLE
+function toggleMenu() {
+    document.getElementById("primaryNav").classList.toggle("open");
+    document.getElementById("hamburgerBtn").classList.toggle("open");
+}
+const x = document.getElementById("hamburgerBtn")
+x.onclick = toggleMenu;

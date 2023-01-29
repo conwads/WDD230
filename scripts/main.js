@@ -12,3 +12,4 @@ function lastUpdated() {
     document.getElementById("lastModified").innerHTML = a;
 }
 
+

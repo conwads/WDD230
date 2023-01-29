@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@700&family=Merriweather+Sans:wght@700&display=swap');
 
-/* html selector */
 header {
     display: grid;
     background-color: rgb(216, 237, 237);
@@ -97,4 +96,27 @@ footer {
 #logo-img img {
     width: 120px;
     margin-left: -900px
+}
+
+
+@media screen and (min-width: 550px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    nav ul li:first-child {
+        display: none;
+    }
+    nav ul li {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 800px) {
+  .contentbox, footer {
+      max-width: 800px;
+  }
+  footer {
+      margin: 0 auto;
+  }
 }
