@@ -22,7 +22,6 @@ nav ul {
 nav a {
     float: left;
     color: #708090;
-    ;
     text-align: center;
     padding: 12px;
     text-decoration: none;
@@ -34,7 +33,6 @@ nav a {
 
 ul li {
     list-style: none;
-    margin-top: 5px;
 }
 
 p {
@@ -71,8 +69,9 @@ h1 {
   
 }
 
-.logo-link {
+#logo-link1 {
     display: grid;
+    margin-top: -21px;
 }
 
 .social-link {
@@ -111,12 +110,10 @@ nav{
     background-color:rgb(216, 237, 237);
     border-radius: 5px;
     box-shadow: 5px 5px 10px #4e6374;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
     align-content: center;
     list-style-type: none;
+    margin-top: 10px;
 }
 
 button{
@@ -127,22 +124,6 @@ button{
     font-size: 20px;
     margin: 10px;
 }
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    float:right;
-    /* position: absolute; */
-}
-
-nav ul li a{
-    display:block;
-}
-
-nav ul {display: none;}
-nav ul.open {display: block;}
-
 
 a:hover{
     background-color: lightgoldenrodyellow;
@@ -161,6 +142,21 @@ footer h1{
     font-size: small;
     color: black;
 }
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    float:right;
+    /* position: absolute; */
+}
+
+nav ul li a{
+    display:block;
+}
+
+nav ul {display: none;}
+nav ul.open {display: block;}
 
 
 #hero{
