@@ -9,54 +9,81 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <link rel="stylesheet" href="styles/normalize2.css">
 </head>
 
 <body>
     <header>
-        <a class="logo-link" href="index4.html">
-            <img src="images/travel.png" alt="logo-img">
-        </a>
-        <section class="headings">
+        <nav>
+            <a class="logo-link" href="index4.html">
+                <img src="images/travel.png" alt="logo-img">
+            </a>
             <h1>Augusta Georgia Travel</h1>
             <div class="subhead">Chamber of Commerce</div>
-        </section>
-        <nav>
-            <ul>
+            <div class="date"></div>
+            <ul id="primaryNav"></ul>
                 <li><a href="food.html">Food</a></li>
                 <li><a href="history_tour.html">History Tour</a></li>
                 <li><a href="master-golf.html">Master Golf</a></li>
                 <li><a href="nature.html">Nature</a></li>
             </ul>
+            <div class="social-link">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https//instagram.com" target="_blank">
+                    <img src="images/instagram_icon.png" alt="insta icon">
+                    
+                </a>
+            </div>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
         </nav>
-        <div class="social-link">
-            <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.png" alt="fb icon">
-            </a>
-            <a href="https//instagram.com" target="_blank">
-                <img src="images/instagram_icon.png" alt="insta icon">
-                
-            </a>
-        <button class="header-order menu-btn" id="ham_btn"><span>&#9776;</span><span>X</span></button>
-    </header>
-    <main>
-        <div id="hero-img">
+        </header>
+    <main id="content">
+        <!-- <div id="hero-img">
             <img src="images/hero-img.jpg" alt="hero image">
-        </div>
-        <div>
+        </div> -->
+        <section id="hero">
+            <p>Hero image will be here</p>
+        </section>
+        <section id="events">
+            <p>Events</p>
+        </section>
 
-        </div>
+        <section id="weather">
+            <p>Weather</p>
+        </section>
+
+        <section id="news">
+            <p>News release</p>
+        </section>
+
+        <section id="join">
+            <p>Join</p>
+        </section>
+
+        <section id="spotlight1">
+            <p>Spotlight1</p>
+        </section>
+
+        <section id="spotlight2">
+            <p>Spotlight2</p>
+        </section>
+
+        <section id="spotlight3">
+            <p>Spotlight3</p>
+        </section>
     </main>
     <footer>
         <a class="logo-link" href="index4.html">
             <img src="images/travel.png" alt="logo-img">
         </a>
-        <p>
-            &copy;<span id="currentyear"></span> | WDD230 Project | Augusta Georgia Travel Chamber | Conner Wadsworth |             
-            Last Modified: <span id="lastmodified"> </span>
-        </p>
+        <h1></h1>
+        <h2>.</h2>
+        <p>Conner-Wadsworth | WDD230</p>
+        <p>(706)-288-4751</p>
+        <div id="year"></div>
     </footer>
-    <script src="lesson 4/script/lesson4.js"></script>
+    <script src="script/lesson4.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,78 @@
-@media (min-width: 768px) and (max-width: 1024px) {
-  
-    
+@media only screen and (min-width: 600px){
+    nav ul{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 5px;
+    }
 
+    button{
+        display:none;
+    }
+
+    li{
+      margin-left: 5vw;
+    }
+
+    #flogo, #ilogo{
+        float:right;
+        padding: 5px;
+    }
+
+    .date{
+        justify-content: center;
+    }
+
+    main{
+        display:grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    
+    #hero{
+        border: solid black 1px;
+        grid-column: 1/3;
+        grid-row: 1/2;
+        margin: 5px;
+    }
+    
+    #events{
+        border: solid black 1px;
+        grid-column: 1/2;
+        margin: 5px;
+    }
+    
+    #weather{
+        border: solid black 1px;
+        margin: 5px;
+        grid-column: 2/3;
+    }
+    
+    #news{
+        border: solid black 1px;
+        grid-row: 2/3;
+        margin: 5px;
+    }
+
+    #join{
+        display:grid;
+        border: solid black 1px;
+        grid-column:1/2;
+        grid-row: 4/5;
+        margin: 5px;
+    }
+    
+    #spotlight1{
+        border: solid black 1px;
+        grid-column: 1/2;
+        grid-row:3/4;
+        margin: 5px;
+    }
+    
+    #spotlight2{
+        border: solid black 1px;
+        grid-column:2/3;
+        grid-row: 3/4;
+        margin: 5px;
+    }
 }
+
