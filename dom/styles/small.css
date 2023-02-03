@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@900&family=PT+Sans+Narrow&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@600&display=swap');
 
 @media only screen and (min-width: 32.5em) {
 	h1 {
@@ -12,9 +12,9 @@
 
 
 :root {
-    /* change the values below to your chosen font(s) */
-    --heading-font: "M PLUS 1p";
-    --paragraph-font: "PT Sans Narrow";
+    
+    --heading-font: "Unbounded";
+    --paragraph-font: "Unbounded";
   }
   
 
@@ -22,7 +22,7 @@
 body{
     margin: 0 auto;
     padding: .5rem;
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'Unbounded', Arial, sans-serif;
     font-size: 16px;
     width: 700px;
 	background-color: rgb(215, 255, 207);
@@ -55,7 +55,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	font-family: Acme, Arial, sans-serif;
+	font-family: unbounded, Arial, sans-serif;
 }
 
 h1 {
@@ -69,6 +69,9 @@ main {
 	background-color: #cebfe9;
 	display: flex;
 	flex-direction: column;
+	width: 70%;
+	box-shadow: 5px 10px rgb(177, 145, 171);
+	border-radius: 20px;
 }
 
 input,
