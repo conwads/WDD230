@@ -1,8 +1,9 @@
-@media only screen and (min-width: 32.5em){
+@media only screen and (min-width: 32.5em) {
     h1 {
         font-size: 2.5em;
     }
-    img{
+
+    img {
         /* float: left; */
         border-radius: 3px;
         box-shadow: -5px 5px 15px rgb(241, 155, 155);
@@ -17,4 +18,3 @@
         font-size: 16px;
     }
 }
-
