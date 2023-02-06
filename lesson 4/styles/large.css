@@ -1,4 +1,4 @@
-@media only screen and (min-width: 750px){
+@media only screen and (min-width: 1290px){
     nav ul{
         display:flex;
         flex-direction: row;
@@ -47,28 +47,29 @@
         margin: 5px;
     }
     
-    #spotlight1{
-        border: solid black 1px;
-        grid-column: 3/4;
-        grid-row: 1/2;
-        margin: 5px;
+    #trolleytransport1 {
+    border: solid black 1px;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    margin: 5px;
     }
     
-    #spotlight2{
+    #kayakingclub2 {
         border: solid black 1px;
         grid-column:3/4;
         grid-row: 2/3;
         margin: 5px;
     }
+    
 
-    #spotlight3{
-        display:grid;
+    #historic3{
         border: solid black 1px;
         grid-column: 3/4;
         grid-row: 3/4;
         margin: 5px;
+        text-align: center;
     }
-}
 
+    }
 
 

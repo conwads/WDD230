@@ -1,4 +1,4 @@
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 750px){
     nav ul{
         display:flex;
         flex-direction: row;
@@ -12,11 +12,6 @@
 
     li{
       margin-left: 5vw;
-    }
-
-    #flogo, #ilogo{
-        float:right;
-        padding: 5px;
     }
 
     .date{
@@ -61,14 +56,14 @@
         margin: 5px;
     }
     
-    #spotlight1{
+    #trolleytransport1{
         border: solid black 1px;
         grid-column: 1/2;
         grid-row:3/4;
         margin: 5px;
     }
     
-    #spotlight2{
+    #kayakingclub2{
         border: solid black 1px;
         grid-column:2/3;
         grid-row: 3/4;
