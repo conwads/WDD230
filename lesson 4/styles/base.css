@@ -76,6 +76,7 @@ nav a {
     font-size: 18px;
     line-height: 25px;
     border-radius: 4px;
+    display: none;
 }
 
 
@@ -98,12 +99,15 @@ nav {
     width: 100%;
 }
 
-button {
-    background-color: transparent;
-    border: none;
-    color: #0a1256;
-    float: right;
-    font-size: 20px;
+#primaryNav {
+    display: flex;
+    flex-direction: column;
+}
+
+#hamburgerBtn {
+    display: block;
+    color: white;
+    font-size: 40px;
     margin: 10px;
 }
 
@@ -145,6 +149,10 @@ footer {
 
 
 /* class selector */
+
+.open a {
+    display: block
+}
 
 .subhead {
     color: #404f5a;
