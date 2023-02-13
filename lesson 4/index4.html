@@ -44,10 +44,18 @@
 
     <main id="content">
         <section id="hero">
-            <img id="augustageorgia" src="images/main2.webp" style="max-width:100%;height:auto;"
-                alt="The city of Augusta">
+        <!-- <picture>    
+            <source srcset="images/img500.jpg" media="(min-width:
+            600px) and (max-width: 799px)">
+            <source srcset="images/img1000.jpg" media="(min-width:
+            1500px)">
+            <img src="images/img200.jpg" alt="cityofaugusta"> -->
+            <img id ="augustageorgia1" src="images/HERO 3_AugustaGA_Getty_WEB72DPI_crop.jpg" alt="mediumimg">
+            <img id="augustageorgia" src="images/largemain2 - Copy.jpg"alt="The city of Augusta">
+            <img id="augustageorgia3" src="images/augustasmall.jpg" alt="smallimg">
             <h3 id="join_us">Join the Chamber</h3>
-        </section>
+        <!-- </picture> -->
+            </section>
 
         <section id="events">
             <h1>Ribbon Cutting</h1>
@@ -61,10 +69,10 @@
             <img id="weatherimg" src="images/weather.webp" style="max-width:100%;height:auto;" alt="Sun with a cloud">
             <h3>31&deg;C</h3>
             <p>Partly Cloudy</p>
-            <p>Wind Speed: 2.5km/h</p>
-            <p>Wind Chill: N/A</p>
+            <p>Wind Speed:<span class="ws"> 7.5</span>mph</p>
+            <p>Wind Chill:<span class="wc"> N/A </span></p>
         </section>
-
+        
         <section id="news">
             <h1>News Release</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -115,6 +123,7 @@
         <div id="year"></div>
     </footer>
     <script src="script/lesson4.js"></script>
+    <script src="script/windchill.js"></script>
 </body>
 
 </html>

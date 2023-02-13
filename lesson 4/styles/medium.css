@@ -75,4 +75,17 @@
         grid-row: 3/4;
     }
 
+    #augustageorgia1 {
+        display: grid;
+        width: 100%;
+        height: 100%;
+    }
+
+    #augustageorgia {
+        display: none;
+    }
+    #augustageorgia3 {
+        display: none;
+    }
+
 }

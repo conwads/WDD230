@@ -74,5 +74,13 @@
         grid-column: 3/4;
         grid-row: 1/4;
     }
-
+    #augustageorgia {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #augustageorgia1 {
+        display: none;
+    }
 }
