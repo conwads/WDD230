@@ -125,25 +125,6 @@ footer h1 {
     color: black;
 }
 
-/* nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    float: right;
-    /* position: absolute; */
-*/
-
-/* nav ul li a {
-    display: block;
-}
-
-nav ul {
-    display: none;
-}
-
-nav ul.open {
-    display: block;
-} */
 
 main {
     display: grid;
