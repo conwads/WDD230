@@ -31,3 +31,18 @@ if (day == 4 || day == 5){
 }
 
 
+
+
+
+/* storage and local session */
+
+localStorage.setItem('name', 'conner wadsworth - Permanent');
+sessionStorage.setItem('class', 'WDD230- not Permanent');
+
+// if(!localStorage.getItem('lastvisit')) {
+//     localStorage.getItem('lastvisit', Date.now())
+
+// } else {
+//     let currentdate = Date.now(),
+//     let lastdate = 
+// }
