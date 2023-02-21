@@ -317,7 +317,7 @@ footer {
 #discover{
     display:grid;
     grid-template-columns: 1fr;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Merriweather Sans', monospace;
 }
 
 #canalboat{
