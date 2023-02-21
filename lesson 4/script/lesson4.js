@@ -11,7 +11,7 @@ let date = new Date();
 let year = date.getFullYear();
 let day = date.getDay();
 
-document.querySelector('h2').innerHTML = '&copy;' + year + "| Augusta Georgia Travel Chamber of Commerce";
+document.querySelector('#copyright').innerHTML = '&copy;' + year + "| Augusta Georgia Travel Chamber of Commerce";
 
 let currentdate = document.lastModified;
 

@@ -83,4 +83,38 @@
     #augustageorgia1 {
         display: none;
     }
+    #discover{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #canalboat{
+        grid-column:1/2;
+        grid-row: 1;
+    }
+
+    #golf{
+        grid-column: 2/3;
+        grid-row: 1;
+    }
+
+    #museum{
+        grid-column:3/4;
+        grid-row: 1;
+    }
+
+    #kayaking{
+        grid-column:1/2;
+        grid-row:2;
+    }
+
+    #schurch{
+        grid-column: 2/3;
+        grid-row:2;
+    }
+
+    #days-visits{
+        grid-column: 1/4;
+    }
 }
+

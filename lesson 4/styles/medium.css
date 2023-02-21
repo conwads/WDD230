@@ -96,4 +96,43 @@
         display: none;
     }
 
+    #discover{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #canalboat{
+        grid-column:1/2;
+        grid-row: 1;
+    }
+
+    #golf{
+        grid-column: 2/3;
+        grid-row: 1;
+    }
+
+    #museum{
+        grid-column:1/2;
+        grid-row: 2;
+    }
+
+    #kayaking{
+        grid-column:2/3;
+        grid-row:2;
+    }
+
+    #schurch{
+        grid-column:1/2;
+        grid-row:3;
+    }
+
+    #discover img:hover{
+        box-shadow: 5px 5px 10px #6f7364;
+    }
+
+    #days-visits{
+        grid-column: 1/3;
+        text-align: center;
+    }
+
 }

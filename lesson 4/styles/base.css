@@ -17,7 +17,7 @@ h1 {
 
 h2 {
     text-align: center;
-    color: white;
+    color: black;
 }
 
 h3 {
@@ -313,6 +313,84 @@ footer {
 #augustageorgia1 {
     display: none;
 }
+
+#discover{
+    display:grid;
+    grid-template-columns: 1fr;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#canalboat{
+    margin: 5px;
+    text-align: center;
+}
+
+#canalboat-img{
+    display:block;
+    margin:0 auto;
+    width: 75%;
+}
+
+#golf{
+    margin:5px;
+    text-align: center;
+}
+
+#golf-img{
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+}
+
+#museum{
+    margin:5px;
+    text-align: center;
+}
+
+#museum-img{
+    display: block;
+    margin: 0 auto;
+    width: 75%
+}
+
+#kayaking{
+    margin:5px;
+    text-align: center;
+}
+
+#kayaking-img{
+    display: block;
+    margin: 0 auto;
+    width:75%;
+}
+
+#schurch{
+    margin:5px;
+    text-align: center;
+}
+
+#schurch-img{
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+}
+
+#swamp{
+    margin:5px;
+    text-align: center;
+}
+
+#swamp-img{
+    display:block;
+    margin: 0 auto;
+    width: 75%;
+}
+
+#days-visits{
+    text-align: center;
+}
+
+
 
 #hamburgerBtn span:nth-child(1) {
     display: block;
