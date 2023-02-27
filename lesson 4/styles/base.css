@@ -407,3 +407,93 @@ footer {
 #hamburgerBtn.open span:nth-child(2) {
     display: block;
 }
+
+
+/* JOIN page CSS */
+
+#join_content{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+    color: #0a1256;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+label, input{
+    display: block;
+    font-size: 1.5em;
+}
+
+label{
+    margin-top: 20px;
+}
+
+input{
+    height: 40px;
+}
+
+input[type='radio']{
+    height: 20px;
+}
+
+form input:required{
+    border-left: red solid 6px;
+}
+
+form input:required:valid{
+    border-left: green solid 6px;
+}
+
+#radio {
+    display: grid;
+    grid-template-columns: 60px 100px;
+    /* align-items: center; */
+}
+
+#radio label, #radio input{
+    margin: 0;
+}
+
+textarea{
+    height: 150px;
+}
+
+input, textarea{
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px; 
+}
+
+input[type='submit']{
+    height: 80px;
+    border-radius: 10px;
+    background-color: #0a1256 ;
+    color: #bba364;
+}
+
+#membership li{
+    padding: 10px;
+}
+
+#join_chamber{
+    text-align: center;
+    color: #0a1256;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Thank you CSS */
+
+#thanks h1 {
+    color: #0a1256;
+    text-align: center;
+    margin-bottom: 20%;
+}
+
+#thanks {
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}

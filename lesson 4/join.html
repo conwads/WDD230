@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="html page for my chamber website">
+    <title>Chamber Join Page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a id="logo-link1" href="index4.html">
+                <img src="images/travel.webp" alt="logo-img">
+            </a>
+            <h4>Augusta Georgia Travel</h4>
+            <div class="subhead">Chamber of Commerce</div>
+            <div class="date"></div>
+            <ul id="primaryNav">
+                <li><a id="hamburgerBtn"><span>&#9776;</span></a></li>
+                <li><a href="food.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="master-golf.html">Master Golf</a></li>
+                <li><a href="nature.html">Nature</a></li>
+            </ul>
+            <div class="social-link">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.webp" alt="fb icon">
+                </a>
+                <a href="https//instagram.com" target="_blank">
+                    <img src="images/instagram_icon.webp" alt="insta icon">
+
+                </a>
+            </div>
+
+        </nav>
+    </header>
+        <h1 id="join_chamber">Join Our Chamber</h1>
+        <main id="join_content">
+            <form method="get" action="thanks.html">
+                <label for="fname">First Name*:</label>
+                <input id="fname" name="firstname" required>
+                <label for="lname">Last Name*:</label>
+                <input id="lname" name="lastname" required>
+                <label for="title">Business Position Title</label>
+                <span>Only letters, dashes and spaces, 7 or more letters</span>
+                <input id="title" name="biztitle" pattern="[A-Za-z -]+" minlength="7" required>
+                <label for="email">Email*:</label>
+                <input id="email" name="email" type="email" placeholder="name@domain.com" required>
+                <label for="phone">Phone*:</label>
+                <input id="phone" name="phone" type="tel" required>
+                <label for="business">Business Name*:</label>
+                <input id="business" name="bizname" required>
+                <label for="member">Enter Your Level of Membership</label>
+                <div id="radio">
+                    <input id="member" id="one" type="radio" name="mlevel">
+                    <label for="one">Level 1</label>
+                    <input id="member" id="two" type="radio" name="mlevel">
+                    <label for="two">Level 2</label>
+                    <input id="member" id="three" type="radio" name="mlevel">
+                    <label for="three">Level 3</label>
+                    <input id="member" id="four" type="radio" name="mlevel">
+                    <label for="four">Level 4</label>
+                </div>
+                <label for="message">Business Description:</label>
+                <textarea id="message"></textarea>
+                <input id="date" type="hidden" name="todaydate">
+                <input type="submit" value="Join the Chamber">
+            </form>
+            <section id="membership">
+                <h2>Membership Levels:</h2>
+                <h2>NP Membership</h2>
+                <ul>
+                    <li>for non profit organizations and there is no fee.</li>
+                </ul>
+                <h2>Bronze Membership</h2>
+                <ul>
+                    <li>15% discounts on events</li>
+                    <li>10% discount on advertising</li>
+                    <li>Fee of $50/month</li>
+                </ul>
+                <h2>Silver Membership</h2>
+                <ul>
+                    <li>25% discount on events</li>
+                    <li>15% discount on advertising</li>
+                    <li>Free participation in the trade fair</li>
+                    <li>Fee of $100/month</li>
+                </ul>
+                <h2>Gold Membership</h2>
+                <ul>
+                    <li>50% discount on events</li>
+                    <li>50% discount on advertising</li>
+                    <li>Free participation in the trade fair</li>
+                    <li>5 free featured ads per year</li>
+                    <li>1 free training per quarter</li>
+                    <li>Fee of $100/month</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <a id="logo-link2" href="index4.html">
+                <img src="images/travel.webp" style="max-width:100%;height:auto;" alt="logo-img2">
+            </a>
+            <h2 id="copyright"></h2>
+            <h6>Conner-Wadsworth | WDD230</h6>
+            <h6>(706)-288-4751</h6>
+            <div id="year"></div>
+        </footer>
+        <script src="script/lesson4.js"></script>
+</body>
+
+</html>
