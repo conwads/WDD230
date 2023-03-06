@@ -1,0 +1,78 @@
+{
+    "businesses": [
+      {
+        "name": "The Boll Weevile Cafe",
+        "address": "10 James Brown Blvd, Augusta, GA 30901",
+        "phone": "(706) 722-7772",
+        "website": "https://www.thebollweevil.com/",
+        "membership": "level 4",
+        "image": "images/??????.jpg"
+      },
+      {
+        "name": "Psychotronic Records",
+        "address": "859 1/2 Broad St., 855 Broad St, Augusta, GA 30901",
+        "phone": "(706) 550-5774",
+        "website": "http://psychotronic.com/",
+        "membership": "level 4",
+        "image": "images/???.jpg"
+      },
+      {
+        "name": "2nd & Charles",
+        "address": "2834 Washington Rd, Augusta, GA 30909",
+        "phone": "(706) 481-9090",
+        "website": "https://www.2ndandcharles.com/locations/augusta",
+        "membership": "level 4",
+        "image": "images/?????.png"
+      },
+      {
+        "name": "Bruster's Real Ice Cream",
+        "address": "1115 Agerton Ln, Augusta, GA 30909",
+        "phone": "(706) 731-9929",
+        "website":"https://brusters.com/" ,
+        "membership": "level 4", 
+        "image": "images/???.png"
+      },
+      {
+        "name": "Escape Outdoors",
+        "address": "377 Furys Ferry Rd, Martinez, GA 30907",
+        "phone": "(706) 869-8080",
+        "website": "https://shopescapeoutdoors.com/",
+        "membership": "level 4",
+        "image": "images/???.jpg"
+      },
+      {
+        "name": "Chicken Salad Chick",
+        "address": " 2817 Washington Rd, Augusta, GA 30909",
+        "phone": "(706) 553-7357",
+        "website": "https://www.chickensaladchick.com/augusta/",
+        "membership": "level 4",
+        "image": "images/?????.png"
+      },
+      {
+        "name": "Active Climbing Augusta",
+        "address": "643 S Old Belair Rd, Grovetown, GA 30813",
+        "phone": "(706) 922-1054",
+        "website": "https://www.activeclimbingaugusta.com/",
+        "membership": "level 4",
+        "image": "images/????.jpg"
+      },
+      {
+        "name": "Andy Jordan's Bicycle Warehouse",
+        "address": "527 13th St, Augusta, GA 30901",
+        "phone": "(706) 724-2453",
+        "website": "https://www.andyjordans.com/" ,
+        "membership": "level 4",
+        "image": "images/???.jpg"
+      },
+      {
+        "name": "Evans Cinemas",
+        "address": "4365 Towne Centre Dr, Evans, GA 30809",
+        "phone": "(706) 869-0543",
+        "website": "https://www.gtcmovies.com/showtimes/evans-cinemas",
+        "membership": "level 4",
+        "image": "images/deseretbook.png"
+      }
+    ]
+  }
+
+  
