@@ -497,3 +497,66 @@ input[type='submit']{
     align-items: center;
     align-content: center;
 }
+
+
+/* Directory CSS */
+
+#directory{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#directory p{
+    color: #0a1256;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+#directory h1, h2{
+    text-align: center;
+    color: #0a1256;
+}
+
+.cards section{
+    border: 1px solid #0a1256;
+    padding: 30px;
+    width: 300px;
+    margin: 20px;
+}
+
+.cards img{
+    width: 60%;
+    box-shadow: 5px 10px 8px 5px #888888;
+}
+
+#view{
+    text-align: center;
+    font-size: 3em;
+}
+
+#cards, #list{
+    color: #0a1256;
+    padding: 0 8px;
+    cursor: pointer;
+}
+
+#directory table{
+    width: 85%;
+    margin: 5% auto;
+    font-size: 15px;
+    display: none;
+}
+
+#directory td{
+    padding: 5px;
+    display: block; /*media query use table-cell*/
+}
+
+#directory tr:nth-of-type(even) {
+    background-color: #ccc;
+}
+

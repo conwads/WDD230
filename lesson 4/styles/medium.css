@@ -135,4 +135,10 @@
         text-align: center;
     }
 
+     /* Directory CSS */
+     #directory td{
+        padding: 5px;
+        display: table-cell; /*media query use table-cell*/
+    }
+
 }
