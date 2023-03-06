@@ -1,4 +1,4 @@
-const url = "https://adelynsmith.github.io/wdd230/chamber/data.json"
+const url = "https://conwads.github.io/jsonapi/daata.json"
 
 async function getBusinessData() {
     const response = await fetch(url);
