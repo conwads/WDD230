@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="html page for my chamber website">
+    <title>Chamber Home Page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a id="logo-link1" href="index4.html">
+                <img src="images/travel.webp" alt="logo-img">
+            </a>
+            <h4>Augusta Georgia Travel</h4>
+            <div class="subhead">Chamber of Commerce</div>
+            <div class="date"></div>
+            <ul id="primaryNav">
+                <li><a id="hamburgerBtn"><span>&#9776;</span></a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="social-link">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.webp" alt="fb icon">
+                </a>
+                <a href="https//instagram.com" target="_blank">
+                    <img src="images/instagram_icon.webp" alt="insta icon">
+
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+    <main id="contact">
+        <section id="contact-info">
+            <h3>Phone Number</h3>
+            <p id="phone-number" class="last-line">(706)-288-4751</p>
+            <h3>Office Hours</h3>
+            <p>Monday - Friday</p>
+            <p class="last-line">8AM - 5PM</p>
+            <h3>Address</h3>
+            <a id="address" class="last-line" target="_blank">
+                <p id="address_first_line">772 Washington Rd,</p>
+                <p>Augusta, GA</p>
+                <p>30809</p>
+            </a>
+        </section>
+        <section id="contact-form">
+            <h2>Send us a Message</h2>
+            <form method="get" action="thankyou.html">
+                <label for="fname">First Name *:</label>
+                <input id="fname" name="firstname" required>
+
+                <label for="lname">Last Name *:</label>
+                <input id="lname" name="lastname" required>
+
+                <label for="email">Email *:</label>
+                <input id="email" name="email" type="email" placeholder="name@domain.com" required>
+
+                <label for="phone">Phone:</label>
+                <input id="phone" name="phone" type="tel">
+
+                <label for="message">Message:</label>
+                <textarea id="message"></textarea>
+                <input id="date" type="hidden" name="todaydate">
+
+                <input type="submit" value="Send Message" formaction="thankyou.html" id="submit-btn">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <a id="logo-link2" href="index4.html">
+            <img src="images/travel.webp" style="max-width:100%;height:auto;" alt="logo-img2">
+        </a>
+        <h2 id="copyright"></h2>
+        <h6>Conner-Wadsworth | WDD230</h6>
+        <h6>(706)-288-4751</h6>
+        <div id="year"></div>
+    </footer>
+    <script src="script/lesson4.js"></script>
+    <script src="script/llazyload.js"></script>
+</body>
+
+</html>
