@@ -6,7 +6,8 @@ body {
     margin: 0;
 }
 
-h1 {
+#join_us1{
+    cursor: pointer;
     font-family: 'Merriweather Sans';
     font-size: 30px;
     text-align: center;
@@ -20,10 +21,12 @@ h2 {
     color: black;
 }
 
-h3 {
+button {
+    cursor: pointer;
     text-align: center;
     color: #0e2143
 }
+
 
 h5 {
     font-family: 'Merriweather Sans';
@@ -112,7 +115,7 @@ nav {
 }
 
 a:hover {
-    background-color: lightgoldenrodyellow;
+    background-color: rgb(3, 3, 2);
     border-radius: 5px;
     box-shadow: 5px 5px 10px #394a6a;
 }
@@ -518,7 +521,7 @@ input[type='submit']{
 
 #directory h1, h2{
     text-align: center;
-    color: #0a1256;
+    color: white;
 }
 
 .cards section{
