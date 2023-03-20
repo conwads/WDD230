@@ -4,6 +4,7 @@ html,
 body {
     height: 100%;
     margin: 0;
+    background-color: #e3d7c7;
 }
 
 #join_us1{
@@ -467,13 +468,14 @@ input, textarea{
     margin-bottom: 20px;
     width: 100%;
     max-width: 500px; 
+    background-color: #afcbdc;
 }
 
 input[type='submit']{
     height: 80px;
     border-radius: 10px;
-    background-color: #0a1256 ;
-    color: #bba364;
+    background-color: #0f4156;
+    color: white;
 }
 
 #membership li{
