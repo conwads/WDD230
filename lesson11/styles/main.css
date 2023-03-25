@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&family=PT+Serif&display=swap');
+
+body {
+    height: 100%;
+    padding: 25px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.primary-bg {
+    background-color: #54A24B;
+}
+
+.secondary-bg {
+    background-color: #8BC34A;
+}
+
+.accent-bg {
+    background-color: #F5A623;
+}
