@@ -1,0 +1,68 @@
+/* html selector */
+body {
+    width: 100%;
+}
+
+header {
+    background-color: rgb(237, 166, 131);
+    display: grid;
+    grid-template-columns: 1fr 2fr 4fr;
+    padding: 5px;
+}
+
+header img {
+    width: 125px;
+}
+
+h2 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+h4 {
+    text-align: center;
+    font-size: 40px;
+
+}
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.5fr;
+    margin-top: 67px;
+    justify-items: center;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 5px;
+    list-style-type: none;
+    color: black;
+ }
+
+
+footer {
+    background-color: rgb(237, 166, 131);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    list-style: none;
+}
+footer img {
+    width: 30px;
+    gap: 10px;
+}
+
+/* id selector */
+#hero img {
+    width: 100%;
+    margin-top: -15px;
+    box-shadow: 5px, 5px, 10px beige;
+
+}
+
+#sandiegoimg img {
+    width: 200px;
+}
+
+/* class selector */
