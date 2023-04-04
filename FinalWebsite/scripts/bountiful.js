@@ -8,19 +8,23 @@ function toggleMenu() {
 const x = document.getElementById('hamburgerBtn')
 x.onclick = toggleMenu;
 
-let myDate = new Date();
-let year = myDate.getFullYear();
+let date = new Date();
+let year = date.getFullYear();
+let day = date.getDay();
 
-document.querySelector('h4').innerHTML = '&copy;' + year;
+document.querySelector('#copyright').innerHTML = '&copy;' + year ;
 
-let currentdate = document.lastModified
+let currentdate = document.lastModified;
 
-document.querySelector('div').textContent = 'Last Updated: ' + currentdate;
+document.querySelector('#year').textContent = `Last Updated: ${currentdate}`;
 
-function lastUpdated() {
-    let a = document.lastModified;
-    document.getElementById("lastModified").innerHTML = a;
-}
+const datefield = document.querySelector(".date");
+const now = new Date();
+const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
+	now
+);
+
+datefield.innerHTML = `<em>${fulldate}</em>`;
 
 // Number of Drinks Ordered
 
@@ -79,5 +83,13 @@ formElement.addEventListener("submit", function (e) {
   feedbackElement.style.display = "block";
   // document.body.classList.toggle("moveDown");
 });
+
+function getLastModified() {
+  let modified = document.querySelector('#modified');
+  modified.textContent = document.lastModified;
+}
+
+
+getLastModified();
 
 

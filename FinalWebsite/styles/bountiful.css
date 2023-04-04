@@ -58,15 +58,97 @@ footer img {
     width: 100%;
     margin-top: -15px;
     box-shadow: 5px, 5px, 10px beige;
-
+}
+#mainbody {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
 #sandiegoimg img {
-    width: 200px;
+    display: grid;
+    width: 30%;
+}
+
+#sandiego {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    padding: 50px;
+}
+
+#sandiegotitle {
+    display: grid;
+    text-align: center;
+    font-size: 40px;
+    font-family: Kalam, sans-serif;
+}
+
+#sandiegopara {
+    display: grid;
+    text-align: center;
+    width: 600px;
+    font-size: 25px;
+    padding: 15px;
+}
+
+#weatherdrink {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    padding: 50px;
+}
+
+#weatherhd {
+    text-align: center;
+    font-size: 40px;
+    font-family: Kalam, sans-serif;
+}
+
+#weatherpara {
+    text-align: center;
+    width: 600px;
+    font-size: 25px;
+    padding: 15px;
+}
+
+#drinkhd {
+    text-align: center;
+    font-size: 40px;
+    font-family: Kalam, sans-serif;
+}
+
+#drinkpara {
+    text-align: center;
+    width: 600px;
+    font-size: 25px;
+    padding: 15px;
 }
 
 /* class selector */
 
+.sandiegotext {
+    background-color: rgb(198, 224, 239);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
+.weather {
+    background-color: rgb(233, 239, 198);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
-
+.drink {
+    background-color: rgb(250, 214, 245);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
