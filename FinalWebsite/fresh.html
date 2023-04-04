@@ -27,15 +27,80 @@
         </header>
     </div>
     <p id="banner"></p>
+    <h1 id="fresh-h1">Build a Drink!</h1>
+    <main id="fresh-main">
+        <form id="form">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" required>
 
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
 
-    <main id="maincontent">
-       
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" required>
+
+            <label>Pick Your Fruits</label>
+            <div id="select-div">
+                <select id="fruit-1">
+                    <option value="NA">None</option>
+                </select>
+                <select id="fruit-2">
+                    <option value="NA">None</option>
+                </select>
+                <select id="fruit-3">
+                    <option value="NA">None</option>
+                </select>
+            </div>
+
+            <label for="special">Additional Instructions</label>
+            <textarea id="special"></textarea>
+            <input id="current-date" type="hidden">
+
+            <button type="submit">Submit Order</button>
+        </form>
+        <p id="log"></p>
+
+        <section id="nutrition-facts">
+            <!-- carbohydrates, protein, fat, sugar, and calories -->
+            <h2>Nutrition Facts</h2>
+            <hr>
+            <p>1 servings per container</p>
+            <div class="nutrition-set">
+                <p><strong>Serving size</strong></p>
+                <p><strong>20 (oz)</strong></p>
+            </div>
+            <div class="line-bg"></div>
+            <p><strong>Amount per serving</strong></p>
+            <div class="nutrition-set">
+                <p class="cal-font">Calories</p>
+                <p class="cal-font" id="calories">0</p>
+            </div>
+            <div class="line-md"></div>
+            <div class="nutrition-set">
+                <p><strong>Total Fat</strong></p>
+                <p id="fat">0</p>
+            </div>
+            <hr>
+            <div class="nutrition-set">
+                <p><strong>Sugar</strong></p>
+                <p id="sugar">0</p>
+            </div>
+            <hr>
+            <div class="nutrition-set">
+                <p><strong>Total Carbohydrates</strong></p>
+                <p id="carbohydrates">0</p>
+            </div>
+            <hr>
+            <div class="nutrition-set">
+                <p><strong>Protein</strong></p>
+                <p id="protein">0</p>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="directions">
             <h2>Directions</h2>
-            <p>4280 Deerwood Lane Evans, Georgia</p>
+            <p>39700 Cantrell Rd, Temecula, CA 92591</p>
         </div>
         <div class="contact">
             <h2>Contact</h2>
@@ -58,10 +123,17 @@
         </div>
         <div class="copyright">
             <h2>Copyright</h2>
-            <p>Text here</p>
+            <p>Conenr Wadsworth WDD 230</p>
         </div>
+
+        <div>Last Updated: <span id="lastModified"></span></div>
+
     </footer>
-    <script src="script/bountiful.js"></script>
+    <script src="scripts/bountiful.js"></script>
+    <script src="scripts/drinkmix.js"></script>
+    <script src="scripts/fresh.js"></script>
+    <script src="lastModified"></script>
+
 
 </body>
 
