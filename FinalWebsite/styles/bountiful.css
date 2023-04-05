@@ -64,9 +64,11 @@ footer img {
     grid-template-columns: 1fr 2fr;
 }
 
-#sandiegoimg img {
+#sandiegoimg {
     display: grid;
-    width: 30%;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(30, 29, 29, 0.26), 0 6px 20px 0 rgba(19, 35, 49, 0.25);
 }
 
 #sandiego {
@@ -89,8 +91,7 @@ footer img {
 #sandiegopara {
     display: grid;
     text-align: center;
-    width: 600px;
-    font-size: 25px;
+    font-size: 17px;
     padding: 15px;
 }
 
@@ -132,46 +133,84 @@ footer img {
 #about-info {
     display: grid;
     grid-template-columns: 1fr;
+    width: 70%;
     background-color: rgb(169, 216, 239);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
     justify-items: center;
-    align-items: center;
-    align-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#about_us {
+    display: grid;
+    text-align: center;
+    justify-items: center;
 }
 
 #ab-title {
    font-size: 40px; 
+   padding: 0;
 }
 
 #ab-para {
-font-size: 25px;
+font-size: 20px;
 text-align: center;
+padding: 15px;
+margin-top: -10px;
+}
+
+#map {
+    display: grid;
+    justify-items: center;
+    padding: 20px;
+    margin-bottom: 100px;
 }
 
 #map-img {
-    width:50%;
+    width: 337%;
+    height: 170%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(30, 29, 29, 0.26), 0 6px 20px 0 rgba(19, 35, 49, 0.25);
 }
 
 #surfers img {
-    width: 50%;
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(30, 29, 29, 0.26), 0 6px 20px 0 rgba(19, 35, 49, 0.25);
 }
 
 #beach img {
-    width: 50%;
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(30, 29, 29, 0.26), 0 6px 20px 0 rgba(19, 35, 49, 0.25);
 }
 
 #ocean img {
-    width: 50%;
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(30, 29, 29, 0.26), 0 6px 20px 0 rgba(19, 35, 49, 0.25);
 }
 
 #pineapple img {
-    width: 50%;
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(30, 29, 29, 0.26), 0 6px 20px 0 rgba(19, 35, 49, 0.25);
+}
+
+#smoothieicon {
+    width: 30%;
+    text-align: center;
 }
 
 /* class selector */
 
 .sandiegotext {
+    width: 70%;
     background-color: rgb(198, 224, 239);
     border-radius: 10px;
     padding: 15px;
@@ -179,6 +218,7 @@ text-align: center;
 }
 
 .weather {
+    width: 70%;
     background-color: rgb(233, 239, 198);
     border-radius: 10px;
     padding: 15px;
@@ -186,8 +226,40 @@ text-align: center;
 }
 
 .drink {
+    display: grid;
+    justify-items: center;
+    width: 70%;
     background-color: rgb(250, 214, 245);
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.firsttwoimages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.secondtwoimages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+#mix {
+    position: absolute;
+    bottom: 0;
+    right: 25px;
+    background-color: #356da1;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #4b6a8d;
+    height: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+#mix{
+    text-align: center;
+    color: #0a1256;
+    font-family: 'Source Sans Pro', sans-serif;
 }
