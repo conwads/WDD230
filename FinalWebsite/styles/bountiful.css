@@ -59,6 +59,12 @@ footer img {
     margin-top: -15px;
     box-shadow: 5px, 5px, 10px beige;
 }
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 #mainbody {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -207,6 +213,17 @@ margin-top: -10px;
     text-align: center;
 }
 
+#fname label {
+    display: flex;
+    flex-direction: column;
+}
+
+#email label {
+    display: flex;
+    flex-direction: column;
+}
+
+
 /* class selector */
 
 .sandiegotext {
@@ -248,6 +265,17 @@ margin-top: -10px;
 
 #mix {
     position: absolute;
+    background-color: rgb(141, 197, 141);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #434648;
+    z-index: inherit;
+    border: 0;
+}
+/* position: absolute;
     bottom: 0;
     right: 25px;
     background-color: #356da1;
@@ -258,5 +286,4 @@ margin-top: -10px;
     text-align: center;
     text-align: center;
     color: #0a1256;
-    font-family: 'Source Sans Pro', sans-serif;
-}
+    font-family: 'Source Sans Pro', sans-serif; */
