@@ -7,17 +7,17 @@ const options = { threshold: 0 };
 
 function preloadImages(img) {
     const source = img.getAttribute('data-src');
-    if(!source) {
+    if (!source) {
         return;
     }
 
     img.src = source;
 }
 
-const io = new IntersectionObserver (
+const io = new IntersectionObserver(
     (entries) => {
         entries.forEach(entry => {
-            if(!entry.isIntersecting) {
+            if (!entry.isIntersecting) {
                 return;
             } else {
                 preloadImages(entry.target);

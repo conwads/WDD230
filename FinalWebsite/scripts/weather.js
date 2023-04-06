@@ -1,5 +1,5 @@
 const apiURL =
-"https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/San%20Diego%20California%20?unitGroup=us&key=Z8ZX6JBPMWA5KK83T2AHVFWE6&contentType=json"
+  "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/San%20Diego%20California%20?unitGroup=us&key=Z8ZX6JBPMWA5KK83T2AHVFWE6&contentType=json"
 const getWeather = async () => {
   const response = await fetch(apiURL);
   const data = await response.json();
@@ -11,7 +11,7 @@ const getWeather = async () => {
   let three = data.days[2].temp;
 
   // data.days[]
-  document.querySelector("#t").textContent =  t.toFixed(1);
+  document.querySelector("#t").textContent = t.toFixed(1);
   document.querySelector("#one").textContent = one.toFixed(1)
   document.querySelector("#two").textContent = two.toFixed(1)
   document.querySelector("#three").textContent = three.toFixed(1)
@@ -20,25 +20,25 @@ const getWeather = async () => {
   document.querySelector("#h").textContent = data.currentConditions.humidity;
   document.querySelector("#condition").textContent =
     data.currentConditions.conditions;
-  document.querySelector("#weather_icon").src = image;
-  document.querySelector("#weather_icon").alt = data.currentConditions.conditions + 'icon';
-    data.currentConditions.conditions + " icon";
+  document.querySelector("#weatherhd").src = image;
+  document.querySelector("#weatherhd").alt = data.currentConditions.conditions + 'icon';
+  data.currentConditions.conditions + " icon";
 
-    // wind chill calculation
+  // wind chill calculation
 
-const temp = document.querySelector('#t').textContent;
-const ws = document.querySelector('#ws').textContent;
-const h = document.querySelector("#h").textContent;
+  const temp = document.querySelector('#t').textContent;
+  const ws = document.querySelector('#ws').textContent;
+  const h = document.querySelector("#h").textContent;
 
-let chill = Math.round((35.74 + (0.6215 * temp))-(35.75 * Math.pow(ws,0.16)) + (0.4275*temp*Math.pow(ws,0.16)));
-console.log(chill);
+  let chill = Math.round((35.74 + (0.6215 * temp)) - (35.75 * Math.pow(ws, 0.16)) + (0.4275 * temp * Math.pow(ws, 0.16)));
+  console.log(chill);
 
 
-let windchill = document.querySelector('#wc');
-if (temp <= 50 && ws >= 3) {
-    
+  let windchill = document.querySelector('#wc');
+  if (temp <= 50 && ws >= 3) {
+
     windchill.textContent = chill;
-}
+  }
 
 };
 getWeather();
