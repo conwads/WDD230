@@ -34,7 +34,7 @@ async function getFruitData() {
     formElement.addEventListener("submit", function (e) {
         e.preventDefault();
         freshElement.innerHTML =
-            "Hello " +
+            "Hi " +
             formElement.firstname.value +
             "! You ordered: a " +
             formElement.message.value + " " +
@@ -43,25 +43,30 @@ async function getFruitData() {
             formElement.two_fruits.value +
             ", " +
             formElement.three_fruits.value +
-            " Smoothie ";
+            " Drink ";
         freshElement.style.display = "block";
 
-        let data = {
+        let info = {
             firstname: formElement.firstname.value,
             email: formElement.email.value,
             phone: formElement.phone.value,
             one_fruits: formElement.one_fruits.value,
             two_fruits: formElement.two_fruits.value,
             three_fruits: formElement.three_fruits.value,
-        
+    
         };
 
+        console.log(formElement.one_fruits.value);
+            
+        let ordersarray = [];
 
         if (localStorage.getItem('orders')){
             let orders = JSON.parse(localStorage.getItem('orders'));
-            orders.push(JSON.stringify(data));
+            orders.push(info);
+            localStorage.setItem('orders', JSON.stringify(orders));
         } else {
-            localStorage.setItem('orders', JSON.stringify(data));
+            ordersarray.push(info)
+            localStorage.setItem('orders', JSON.stringify(ordersarray));
         }
 
 
