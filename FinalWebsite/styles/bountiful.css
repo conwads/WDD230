@@ -305,3 +305,79 @@ footer img {
     text-align: center;
     color: #34462A;
 }
+
+/* for screens smaller than 768px */
+@media (max-width: 767px) {
+    header {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+    nav {
+      grid-template-columns: 1fr 1fr;
+    }
+    #mainbody {
+      grid-template-columns: 1fr;
+    }
+    #sandiego {
+      grid-template-columns: 1fr;
+      padding: 20px;
+    }
+    #weatherdrink {
+      grid-template-columns: 1fr;
+      padding: 20px;
+    }
+    #weatherpara {
+      width: 100%;
+    }
+  }
+  
+  /* for screens between 768px and 1024px */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    header {
+      grid-template-columns: 1fr 2fr;
+      justify-items: center;
+    }
+    nav {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    #mainbody {
+      grid-template-columns: 1fr 1fr;
+    }
+    #sandiego {
+      grid-template-columns: 1fr 1fr;
+      padding: 50px;
+    }
+    #weatherdrink {
+      grid-template-columns: 1fr 1fr;
+      padding: 50px;
+    }
+    #weatherpara {
+      width: 600px;
+    }
+  }
+  
+  /* for screens larger than 1024px */
+  @media (min-width: 1025px) {
+    header {
+      grid-template-columns: 1fr 2fr 4fr;
+      justify-items: center;
+    }
+    nav {
+      grid-template-columns: 1fr 1fr 1fr 0.5fr;
+    }
+    #mainbody {
+      grid-template-columns: 1fr 2fr;
+    }
+    #sandiego {
+      grid-template-columns: 1fr 1fr;
+      padding: 50px;
+    }
+    #weatherdrink {
+      grid-template-columns: 1fr 1fr;
+      padding: 50px;
+    }
+    #weatherpara {
+      width: 600px;
+    }
+  }
+  

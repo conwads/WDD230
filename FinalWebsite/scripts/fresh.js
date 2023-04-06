@@ -10,21 +10,21 @@ async function getFruitData() {
         var sel = document.createElement("option");
         sel.innerHTML = data[i].name;
         sel.value = data[i].name;
-        document.getElementById("one_fruits").appendChild(sel);
+        document.getElementById("fruitone").appendChild(sel);
     }
 
     for (i = 0; i < data.length; i++) {
         var sel = document.createElement("option");
         sel.innerHTML = data[i].name;
         sel.value = data[i].name;
-        document.getElementById("two_fruits").appendChild(sel);
+        document.getElementById("fruittwo").appendChild(sel);
     }
 
     for (i = 0; i < data.length; i++) {
         var sel = document.createElement("option");
         sel.innerHTML = data[i].name;
         sel.value = data[i].name;
-        document.getElementById("three_fruits").appendChild(sel);
+        document.getElementById("fruitthree").appendChild(sel);
     }
 
 
@@ -38,11 +38,11 @@ async function getFruitData() {
             formElement.firstname.value +
             "! You ordered: a " +
             formElement.message.value + " " +
-            formElement.one_fruits.value +
+            formElement.fruitone.value +
             ", " +
-            formElement.two_fruits.value +
+            formElement.fruittwo.value +
             ", " +
-            formElement.three_fruits.value +
+            formElement.fruitthree.value +
             " Drink ";
         freshElement.style.display = "block";
 
@@ -50,13 +50,13 @@ async function getFruitData() {
             firstname: formElement.firstname.value,
             email: formElement.email.value,
             phone: formElement.phone.value,
-            one_fruits: formElement.one_fruits.value,
-            two_fruits: formElement.two_fruits.value,
-            three_fruits: formElement.three_fruits.value,
+            fruitone: formElement.fruitone.value,
+            fruittwo: formElement.fruittwo.value,
+            fruitthree: formElement.fruitthree.value,
     
         };
 
-        console.log(formElement.one_fruits.value);
+        console.log(formElement.fruitone.value);
             
         let ordersarray = [];
 
@@ -96,7 +96,7 @@ async function getFruitData() {
             console.log(item.name);
 
 
-            if (item.name == formElement.one_fruits.value) {
+            if (item.name == formElement.fruitone.value) {
                 nutritions1 = item.nutritions;
                 calories1 = item.nutritions.calories;
                 carbohydrates1 = item.nutritions.carbohydrates;
@@ -105,7 +105,7 @@ async function getFruitData() {
                 sugar1 = item.nutritions.sugar;
             }
 
-            if (item.name == formElement.two_fruits.value) {
+            if (item.name == formElement.fruittwo.value) {
                 nutritions2 = item.nutritions;
                 calories2 = item.nutritions.calories;
                 carbohydrates2 = item.nutritions.carbohydrates;
@@ -114,7 +114,7 @@ async function getFruitData() {
                 sugar2 = item.nutritions.sugar;
             }
 
-            if (item.name == formElement.three_fruits.value) {
+            if (item.name == formElement.fruitthree.value) {
                 nutritions3 = item.nutritions;
                 calories3 = item.nutritions.calories;
                 carbohydrates3 = item.nutritions.carbohydrates;
@@ -133,11 +133,11 @@ async function getFruitData() {
         let protein_calc = Number(protein1) + Number(protein2) + Number(protein3);
         let sugar_calc = Number(sugar1) + Number(sugar2) + Number(sugar3);
 
-        freshElement.append("Calorie total: " + cal_calc.toFixed(2) + " ") + "<br>";
-        freshElement.append("Carb total: " + carb_calc.toFixed(2) + " \n") + "<br>";
-        freshElement.append("total fat: " + fat_calc.toFixed(2) + " \n") + "<br>";
-        freshElement.append("total protein: " + protein_calc.toFixed(2) + " \n") + "<br>";
-        freshElement.append("total sugar: " + sugar_calc.toFixed(2) + " \n") + "<br>";
+        freshElement.append("Calorie sum: " + cal_calc.toFixed(2) + " ") + "<br>";
+        freshElement.append("Carb sum: " + carb_calc.toFixed(2) + " \n") + "<br>";
+        freshElement.append("fat total: " + fat_calc.toFixed(2) + " \n") + "<br>";
+        freshElement.append("protein total: " + protein_calc.toFixed(2) + " \n") + "<br>";
+        freshElement.append("sugar total: " + sugar_calc.toFixed(2) + " \n") + "<br>";
         freshElement.append(date);
 
 
