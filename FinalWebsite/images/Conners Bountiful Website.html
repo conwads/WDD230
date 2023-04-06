@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)http://127.0.0.1:5500/wdd230/FinalWebsite/bountiful.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conners Bountiful Website</title>
+    
+    
+<link rel="stylesheet" href="./Conners Bountiful Website_files/normalize.css"><link rel="stylesheet" href="./Conners Bountiful Website_files/bountiful.css"></head>
+
+<body>
+    <div id="content">
+        <header>
+            <a id="logo-link1" href="http://127.0.0.1:5500/wdd230/FinalWebsite/index4.html">
+                <img src="./Conners Bountiful Website_files/Bountfooimg.png" alt="logo-img">
+            </a>
+            <h4>Bountiful Foods</h4>
+            <nav>
+                <li><a href="http://127.0.0.1:5500/wdd230/FinalWebsite/bountiful.html">HOME</a></li>
+                <li><a href="http://127.0.0.1:5500/wdd230/FinalWebsite/fresh.html">FRESH</a></li>
+                <li><a href="http://127.0.0.1:5500/wdd230/FinalWebsite/aboutus.html">ABOUT US</a></li>
+            </nav>
+            <div class="social">
+                <a href="https://facebook.com/" target="_blank">
+                     <img src="./Conners Bountiful Website_files/facebook.png" alt="fb icon">
+                </a>
+                <a href="http://127.0.0.1:5500/wdd230/FinalWebsite/https//instagram.com" target="_blank">
+                    <img src="./Conners Bountiful Website_files/instagram_icon.png" alt="insta icon">
+                </a>
+                <a href="http://127.0.0.1:5500/wdd230/FinalWebsite/https//twitter.com" target="_blank">
+                    <img src="./Conners Bountiful Website_files/twitter.png" alt="twitter icon">
+                </a>
+            </div>
+        </header>
+    </div>
+    <p id="banner"></p>
+    <div id="hero">
+        <button id="mix" onclick="window.location.href=&#39;https:conwads.github.io/wdd230/FinalWebsite/fresh.html&#39;;">Mix Drink</button>
+        <img src="./Conners Bountiful Website_files/heroforever.jpg" alt="">
+    </div>
+    <main>
+        <section id="sandiego">
+            <section class="sandiegotext">
+                <h1 id="sandiegotitle">San Diego</h1>
+                <p id="sandiegopara">San Diego California is known for having the best weather in the world.
+                    Average Temperatures stay around 70 degrees Fahrenheit and there is roughly
+                    260 days of sunshine each year. This leads to some of the best and freshest
+                    fruit the US has to offer. Other than fruit, the city of San Diego is home
+                    to over 1.3 million people which is no surpise when you consider that it's located on the coast
+                    of the Pacific Ocean. On the coast are some of the most beautiful beaches in
+                    the world, including La Jolla Cove and Coronado Beach. San Diego is home to the
+                    largest urban park in the United States, Balboa Park, which spans 1,200 acres and
+                    features 15 museums, several theaters, and the world-famous San Diego Zoo. </p>
+            </section>
+            <img id="sandiegoimg" src="./Conners Bountiful Website_files/sandiego3.jpg" alt="">
+        </section>
+        <section id="weatherdrink">
+            <section class="weather">
+                <h1 id="weatherhd">Weather</h1>
+                <img id="weatherhd" src="./Conners Bountiful Website_files/clear-day.svg" style="max-width:100%;height:auto;" alt="Weather Icon">
+                <h2 class="temp"><span id="t">57.0</span>°F</h2>
+                <p id="condition">Partially cloudy</p>
+                <hr>
+                <p class="forcast">
+                  Three Day Forcast:<br>
+                  <span id="one">55.6</span>°F<br>
+                  <span id="two">57.7</span>°F<br>
+                  <span id="three">57.4</span>°F<br>
+                </p>
+                <p>Wind Speed: <span id="ws">4.7</span> mph</p>
+                <p>Humidity: <span id="h">66.7</span></p>
+            </section>
+
+            <section class="drink">
+                <h1 id="drinkhd">Mix make your very own drink! 🧃 </h1>
+                <img id="smoothieicon" src="./Conners Bountiful Website_files/fruitdrinkicon.jpg" alt="">
+                <button id="mixbutton" onclick="window.location.href=&#39;https:conwads.github.io/wdd230/FinalWebsite/fresh.html&#39;;">Mix Drink</button>
+            </section>
+        </section>
+
+    </main>
+    <footer>
+        <div class="directions">
+            <h2>Directions</h2>
+            <p>39700 Cantrell Rd, Temecula, CA 92591</p>
+        </div>
+        <div class="contact">
+            <h2>Contact</h2>
+            <p>Email:bountiful@gmail.com</p><br>
+            <p>Phone: 111-222-3333</p><br><br>
+        </div>
+        <div class="copyright">
+            <h2>Copyright</h2>
+            <p>Conner Wadsworth WDD 230</p>
+            <p>© 2023 Bountiful Foods</p>
+            <p>Last Modified: <span id="lastModified">4/5/2023 19:59:01</span></p>
+            <script src="./Conners Bountiful Website_files/last-modified.js.download"></script>
+        </div>
+    </footer>
+    <script src="./Conners Bountiful Website_files/bountiful.js.download"></script>
+    <script src="./Conners Bountiful Website_files/weather.js.download"></script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

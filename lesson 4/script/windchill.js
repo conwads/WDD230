@@ -8,8 +8,8 @@ const getweather = async () => {
     let image = `https://raw.githubusercontent.com/visualcrossing/WeatherIcons/main/SVG/1st%20Set%20-%20Color/${data.currentConditions.icon}.svg`;
     document.querySelector('#ws').textContent = data.currentConditions.windspeed;
     document.querySelector('#condition').textContent = data.currentConditions.conditions;
-    document.querySelector('#weatherimg').src = image;
-    document.querySelector('#weatherimg').alt = data.currentConditions.conditions + ' icon';
+    document.querySelector('#weatherhd').src = image;
+    document.querySelector('#weatherhd').alt = data.currentConditions.conditions + ' icon';
 
 
     const temp = document.querySelector('#t').textContent;

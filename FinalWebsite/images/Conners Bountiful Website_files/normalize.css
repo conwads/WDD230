@@ -61,10 +61,6 @@
    * 2. Correct the odd `em` font sizing in all browsers.
    */
   
-
-  header {
-    width: 100%;
-  }
   pre {
     font-family: monospace, monospace; /* 1 */
     font-size: 1em; /* 2 */

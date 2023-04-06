@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/freshpage.css">
     <link rel="stylesheet" href="styles/bountiful.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
 </head>
 
 <body>
@@ -28,75 +26,39 @@
         </header>
     </div>
     <p id="banner"></p>
-    <h1 id="fresh-h1">Build a Drink!</h1>
-    <main id="fresh-main">
-        <form id="form">
-            <label for="fname">First Name</label><br>
-            <input type="text" id="fname" required style="width: 99%;"><br>
+    <div id="title">
+        <h1 id="fresh-h1">Build a Drink!</h1>
+    </div>
+    <main id="fresh">
+        <div id="fresh_content">
+            <h1 id="nutrition_facts">Nutrition Facts: </h1>
+            <h1 id="carbcalc"></h1>
+        </div>
+        <form method="post" action="order-received-page">
+            <label for="fname">First Name*:</label>
+            <input id="fname" name="firstname" required />
+            <label for="email">Email*:</label>
+            <input id="email" name="email" type="email" required />
+            <label for="phone">Phone*:</label>
+            <input id="phone" name="phone" type="tel" required />
+            <label for="member">Fruit options: </label>
+            <select name="fruit_name" id="one_fruits">
+                <option value="">--Select--</option>
+            </select><br><br>
 
-            <label for="email">Email</label><br>
-            <input type="email" id="email" required style="width: 97%;"><br>
+            <select name="fruit_name2" id="two_fruits">
+                <option value="">--Select--</option>
+            </select><br><br>
 
-            <label for="phone">Phone Number</label><br>
-            <input type="tel" id="phone" required style="width: 97%;"><br>
+            <select name="fruit_name3" id="three_fruits">
+                <option value="">--Select--</option>
+            </select>
 
-            <label>Pick Your Fruits</label><br>
-            <div id="select-div">
-                <select id="fruit-1">
-                    <option value="NA">None</option>
-                </select><br>
-                <select id="fruit-2"><br>
-                    <option value="NA">None</option>
-                </select><br>
-                <select id="fruit-3"><br>
-                    <option value="NA">None</option>
-                </select><br>
-            </div>
-
-            <label for="special">Additional Instructions</label>
-            <textarea id="special"></textarea>
-            <input id="current-date" type="hidden">
-
-            <button type="submit">Submit Order</button>
+            <label for="message">Mixing Directions:</label>
+            <textarea id="message"></textarea>
+            <input id="date" type="hidden" name="todaydate" />
+            <input type="submit" value="Place Order" id="drinkCount" />
         </form>
-        <p id="log"></p>
-
-        <section id="nutrition-facts">
-            <!-- carbohydrates, protein, fat, sugar, and calories -->
-            <h2>Nutrition Facts</h2>
-            <hr>
-            <p>1 servings per container</p>
-            <div class="nutrition-set">
-                <p><strong>Serving size</strong></p>
-                <p><strong>20 (oz)</strong></p>
-            </div>
-            <div class="line-bg"></div>
-            <p><strong>Amount per serving</strong></p>
-            <div class="nutrition-set">
-                <p class="cal-font">Calories</p>
-                <p class="cal-font" id="calories">0</p>
-            </div>
-            <div class="line-md"></div>
-            <div class="nutrition-set">
-                <p><strong>Total Fat</strong></p>
-                <p id="fat">0</p>
-            </div>
-            <hr>
-            <div class="nutrition-set">
-                <p><strong>Sugar</strong></p>
-                <p id="sugar">0</p>
-            </div>
-            <hr>
-            <div class="nutrition-set">
-                <p><strong>Total Carbohydrates</strong></p>
-                <p id="carbohydrates">0</p>
-            </div>
-            <hr>
-            <div class="nutrition-set">
-                <p><strong>Protein</strong></p>
-                <p id="protein">0</p>
-            </div>
-        </section>
     </main>
     <footer>
         <div class="directions">
@@ -105,30 +67,32 @@
         </div>
         <div class="contact">
             <h2>Contact</h2>
-            <p>Email:bountiful@gmail.com</p><br>
-            <p2>Phone: 111-222-3333</p2><br><br>
-            <li>
-                <a href="https://facebook.com" target="_blank">
-                    <img src="images/facebook.png" alt="fb icon">
-                </a>
-                <a href="https//instagram.com" target="_blank">
-                    <img src="images/instagram_icon.png" alt="insta icon">
-                </a>
-            <li>
-                <a href="https//youtube.com" target="_blank">
-                    <img src="images/YouTubelogo.jpg" alt="insta icon">
-                </a>
+            <p>Email:bountiful@gmail.com</p>
+            <p>Phone: 111-222-3333</p><br>
         </div>
         <div class="copyright">
             <h2>Copyright</h2>
-            <p>Conenr Wadsworth WDD 230</p>
+            <p>Conner Wadsworth WDD 230</p>
+            <p>&copy; 2023 Bountiful Foods</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+            <script src="last-modified.js"></script>
         </div>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https//instagram.com" target="_blank">
+                <img src="images/instagram_icon.png" alt="insta icon">
+            </a>
+            <a href="https//twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+        </div>
+    </footer>
     </footer>
     <script src="scripts/bountiful.js"></script>
     <script src="scripts/drinkmix.js"></script>
     <script src="scripts/fresh.js"></script>
-    <script src="lastModified"></script>
-
 
 </body>
 

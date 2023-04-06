@@ -1,7 +1,8 @@
 form {
-    width: 30%;
+    display: grid;
+    grid-template-columns: 1fr;
     min-width: 280px;
-    margin-top: 30px;
+    margin: 30px;
     padding: 20px;
     background-color: rgb(255, 228, 228);
     border-radius: 5px;
@@ -16,7 +17,7 @@ input[type=text] {
     box-sizing: border-box;
     background-color: rgb(255, 228, 228);
   }
-  
+
   input [type=tel] {
     width: 100%;
     padding: 12px 20px;
@@ -40,17 +41,103 @@ input[type=text] {
   }
   
   input[type=submit]:hover {
-    background-color: #4d6e8a;
+    background-color: #7294b2;
   }
 
-  @media screen and (max-width: 750px) {
-    .content {
-      padding: 100px 0 0;
-      width: 100%;
-      display: flex;
-    }
-    form {
-      margin: 20px auto;
-      justify-self: center;
-    }
+  #freshMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    justify-content: center;
+  }
+
+/* Fresh page CSS */
+
+label, input{
+  display: block;
+  border-radius: 5px;
+  color: #292a2d;
+  font-size: 20px;
+  font-family: 'Kalam', sans-serif;
 }
+
+label{
+  margin-top: 20px;
+}
+
+input{
+  height: 40px;
+}
+
+input[type='checkbox']{
+  height: 20px;
+}
+
+form input:required{
+  border-left: #8b6a6a solid 4px;
+}
+
+form input:required:valid{
+  border-left: rgb(113, 123, 113) solid 6px;
+}
+
+#checkbox {
+  display: grid;
+  grid-template-columns: 60px 100px;
+  /* align-items: center; */
+}
+
+#checkbox label, #checkbox input{
+  margin: 0;
+}
+
+input, textarea{
+  margin-bottom: 20px;
+}
+
+input[type='submit']{
+  height: 80px;
+  border-radius: 10px;
+  background-color:#34526b;
+  color: #CDDAC5;
+}
+
+#membership li{
+  padding: 10px;
+}
+
+select{
+  display: block;
+  border-radius: 5px;
+  color: #000000;
+  font-size: 1em;
+  font-family: 'Kalam', sans-serif;
+}
+
+
+#fresh_content{
+  background-color: rgb(113, 150, 139);
+  font-family: 'Kalam', sans-serif;
+  border-radius: 6px;
+  width: 30%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  text-align: center;
+  position: absolute;
+  top: 325px;
+  right: 35px;
+  padding: 20px;
+  display: none;   
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+}
+
+
+@media only screen and (min-width: 500px){
+  ul{
+      flex-direction: row;
+      justify-content: space-around;
+  }
+}
+

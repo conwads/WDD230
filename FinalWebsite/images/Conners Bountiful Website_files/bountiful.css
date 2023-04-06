@@ -4,7 +4,6 @@ body {
 }
 
 header {
-    width: 100%;
     background-color: rgb(237, 166, 131);
     display: grid;
     grid-template-columns: 1fr 2fr 4fr;
@@ -33,17 +32,17 @@ nav {
     list-style: none;
 }
 
-a {
+li a {
     display: grid;
     text-decoration: none;
     font-size: 25px;
+    font-weight: 5px;
     list-style-type: none;
     color: black;
  }
 
 
 footer {
-    width: 100%;
     background-color: rgb(237, 166, 131);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -241,7 +240,6 @@ footer img {
 .social {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    position: absolute;
 }
 
 /* class selector */
@@ -304,4 +302,8 @@ footer img {
     text-align: center;
     color: #34462A;
     font-family: 'Kalam' sans-serif;
+}
+.social img {
+    width: 40%;
+    margin-left: 50px;
 }
