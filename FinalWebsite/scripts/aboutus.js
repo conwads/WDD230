@@ -1,5 +1,3 @@
-let modified = document.querySelector('#modified');
-modified.textContent = document.lastModified;
 
 const images = document.querySelectorAll('img[data-src]');
 
