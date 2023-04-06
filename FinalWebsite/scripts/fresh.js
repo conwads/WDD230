@@ -46,6 +46,25 @@ async function getFruitData() {
             " Smoothie ";
         freshElement.style.display = "block";
 
+        let data = {
+            firstname: formElement.firstname.value,
+            email: formElement.email.value,
+            phone: formElement.phone.value,
+            one_fruits: formElement.one_fruits.value,
+            two_fruits: formElement.two_fruits.value,
+            three_fruits: formElement.three_fruits.value,
+        
+        };
+
+
+        if (localStorage.getItem('orders')){
+            let orders = JSON.parse(localStorage.getItem('orders'));
+            orders.push(data);
+        } else {
+            localStorage.setItem('orders', data);
+        }
+
+
         let nutritions1;
         let nutritions2;
         let nutritions3;
