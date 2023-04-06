@@ -59,7 +59,6 @@ footer img {
 #hero img {
     width: 100%;
     margin-top: -15px;
-    box-shadow: 5px, 5px, 10px beige;
 }
 
 #hero {
@@ -305,5 +304,4 @@ footer img {
     margin: 5px;
     text-align: center;
     color: #34462A;
-    font-family: 'Kalam' sans-serif;
 }
