@@ -117,6 +117,9 @@ footer img {
     text-align: center;
     font-size: 40px;
     font-family: Kalam, sans-serif;
+}
+
+#weatherimg {
     width: 10%;
 }
 
@@ -283,7 +286,7 @@ footer img {
 }
 
 
-#mix {
+#mix1 {
     position: absolute;
     background-color: rgb(141, 197, 141);
     color: rgb(0, 0, 0);
