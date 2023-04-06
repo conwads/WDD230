@@ -59,9 +59,9 @@ async function getFruitData() {
 
         if (localStorage.getItem('orders')){
             let orders = JSON.parse(localStorage.getItem('orders'));
-            orders.push(data);
+            orders.push(JSON.stringify(data));
         } else {
-            localStorage.setItem('orders', data);
+            localStorage.setItem('orders', JSON.stringify(data));
         }
 
 
